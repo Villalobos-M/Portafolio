@@ -4,6 +4,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 
+html {
+   scroll-behavior: smooth; /*desplazamiento del scroll*/
+}
+
 * {
    box-sizing: border-box;
    padding: 0;
@@ -167,18 +171,31 @@ span {
    /*color: rgb(23, 116, 119);*/
 }
 
+#estudios,
 #experiencia {
    display: flex;
-   justify-content: center;
-   margin: 7rem 0 1rem 0;
+   justify-content: left;
+   margin: 7rem 0 1rem 4%;
 }
 
+#estudios > h2 {
+   font-family: "Playfair Display", serif;
+   font-size: 28px;
+}
 #experiencia > h2 {
    font-family: "Playfair Display", serif;
    font-size: 28px;
 }
 
 .experiencia article {
+   padding: 1.5rem;
+   margin: 2rem 0 2rem 0.5rem;
+   width: 95%;
+   height: 312px;
+   border: 1px solid rgba(192, 192, 192, 0.664);
+}
+
+.experiencia-2 article {
    padding: 1.5rem;
    margin: 2rem 0 2rem 0.5rem;
    width: 95%;
@@ -203,6 +220,12 @@ span {
    margin: 0.5rem 0;
 }
 
+.experiencia-2 article div {
+   margin: 1rem 0;
+}
+.experiencia-2 article div h3 {
+   margin: 0.5rem 0;
+}
 #skills {
    display: flex;
    justify-content: center;
@@ -221,7 +244,7 @@ span {
 }
 .graph-skills article {
    width: 100%;
-   padding: 1rem;
+   padding: 1rem 0;
 }
 
 #artic-1 {
@@ -474,8 +497,20 @@ label {
       padding: 0 3rem;
    }
 
+   .experiencia-2 {
+      padding: 0 3rem;
+   }
+
+   #estudios > h2 {
+      font-size: 30px;
+   }
+
    #experiencia > h2 {
       font-size: 30px;
+   }
+   #estudios,
+   #experiencia {
+      margin: 7rem 0 1rem 8%;
    }
 
    .exp-año {
@@ -497,6 +532,18 @@ label {
    }
 
    .experiencia article div h2 {
+      font-size: 26px;
+   }
+
+   .experiencia-2 article div {
+      margin: 1.2rem 0;
+   }
+   .experiencia-2 article div h3 {
+      margin: 0.7rem 0;
+      font-size: 20px;
+   }
+
+   .experiencia-2 article div h2 {
       font-size: 26px;
    }
 
@@ -563,6 +610,40 @@ label {
 
    #home > p {
       font-size: 68px;
+   }
+
+   .experiencia {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   #estudios > h2 {
+      font-size: 30px;
+   }
+   #experiencia {
+      margin: 5.5rem 0 1rem 4%;
+   }
+
+   #experiencia > h2 {
+      font-size: 30px;
+   }
+
+   .experiencia article {
+      width: 45%;
+   }
+
+   .experiencia-2 article {
+      width: 45%;
+   }
+
+   .exp-año {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      width: 5rem;
+      height: 1.5rem;
+      background-color: rgba(233, 114, 67, 0.829);
    }
 
    #skills {
