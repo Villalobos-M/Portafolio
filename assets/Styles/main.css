@@ -90,18 +90,21 @@ header {
    flex-direction: column;
    align-items: flex-start;
    justify-content: center;
-   min-height: 80vh;
+   max-height: 100vh;
 }
-header > h6 {
+header > div > h6 {
    font-family: "Mulish", sans-serif;
    font-size: 18px;
    color: rgb(255, 123, 0);
 }
 
-header > p {
+header > div > p {
    font-size: 40px;
    font-family: "Cormorant Garamond", serif;
    color: #ffff;
+}
+#home > div {
+   margin-top: 10rem;
 }
 
 .h2 {
@@ -114,7 +117,7 @@ header > p {
    padding: 1rem;
 }
 
-#home > a > button {
+#home > div > a > button {
    margin: 3rem 0 0 15%;
    padding: 0.5rem 1rem;
    width: 10rem;
@@ -511,11 +514,11 @@ label {
    #home {
       padding: 0 0 0 1.5rem;
    }
-   #home > h6 {
+   #home > div > h6 {
       font-size: 20px;
    }
 
-   #home > p {
+   #home > div > p {
       font-size: 52px;
    }
 
@@ -692,11 +695,11 @@ label {
    #home {
       padding: 0 0 0 3rem;
    }
-   #home > h6 {
+   #home > div > h6 {
       font-size: 20px;
    }
 
-   #home > p {
+   #home > div > p {
       font-size: 68px;
    }
 
